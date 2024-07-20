@@ -1,0 +1,13 @@
+{
+  "name": "rest-api",
+  "version": "0.1.0",
+  "description": "backend service for the peeps dashboard",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "build": "node build .",
+    "test": "react-scripts test"
+  },
+  "author": "",
+  "license": "MIT"
+}
