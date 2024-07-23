@@ -1,18 +1,12 @@
-import { grey } from "@mui/material/colors";
+import { grey} from "@mui/material/colors";
 import { THEMES } from "./constants";
 
 const defaultVariant = {
   name: THEMES.LIGHT,
   palette: {
     mode: "light",
-    primary: {
-      main: grey[100],
-      contrastText: grey[500],
-    },
-    secondary: {
-      main: grey[200],
-      contrastText: grey[600],
-    },
+    primary: grey,
+    secondary: grey,
     background: {
       default: grey[50],
       paper: grey[50],
@@ -35,20 +29,14 @@ const darkVariant = {
   name: THEMES.DARK,
   palette: {
     mode: "dark",
-    primary: {
-      main: grey[700],
-      contrastText: grey[100],
-    },
-    secondary: {
-      main: grey[700],
-      contrastText: grey[100],
-    },
+    primary: grey,
+    secondary: grey,
     background: {
       default: grey[900],
-      paper: grey[800],
+      paper: grey[900],
     },
     text: {
-      primary: "rgba(255, 255, 255, 0.95)",
+      primary: grey[100],
       secondary: "rgba(255, 255, 255, 0.5)",
     },
   },
