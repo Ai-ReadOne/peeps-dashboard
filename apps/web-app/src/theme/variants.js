@@ -8,8 +8,8 @@ const defaultVariant = {
     primary: grey,
     secondary: grey,
     background: {
-      default: grey[50],
-      paper: grey[50],
+      default: grey[100],
+      paper: grey[100],
     },
   },
   sidebar: {

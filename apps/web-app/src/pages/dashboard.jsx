@@ -5,8 +5,8 @@ import {
   SingleValueMetricCard,
   TeamProductivityMetricCard 
 } from "../components/metrics";
-import LineChart from "../components/metrics/line-chart"
-import PieChart from "../components/metrics/pie-chart"
+import LineChart from "../components/metrics/lineChart"
+import PieChart from "../components/metrics/pieChart"
 
 
 function Dashboard() {
@@ -53,10 +53,10 @@ function Dashboard() {
       
       <Grid container  spacing={2}>
         <Grid item xs={12} md={6} lg={4}>
-          Flex On
+          <LineChart />
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
-          Flex on
+          <PieChart />
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
           <TeamProductivityMetricCard />

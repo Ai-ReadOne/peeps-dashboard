@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import {MessageHeader} from "../index"
 import { NavItem } from "./containers";
-import sidebarItems from "./sidebar-items";
+import sidebarItems from "./sidebarItems";
 
 
 
