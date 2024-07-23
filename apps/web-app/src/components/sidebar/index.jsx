@@ -64,7 +64,7 @@ const Profile = styled(NavLink)`
   }
   
   .name{
-    color: ${(props) => props.theme.sidebar.color};
+    color: ${(props) => props.theme.primary};
   }
 `;
 

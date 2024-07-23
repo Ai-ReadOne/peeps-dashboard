@@ -7,7 +7,7 @@ function Home() {
       <MessageHeader>
         Welcome John!
       </MessageHeader>
-      <Card sx={{width: "600", height: "600" }} variant="outline">
+      <Card sx={{width: "600", height: "600" }} variant="outline" style={{ boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.2)'}}>
         <CardHeader title="Page not found" />
       </Card>
 
