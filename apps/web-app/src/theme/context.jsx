@@ -4,7 +4,7 @@ import { THEMES } from "./constants";
 
 const ThemeContext = React.createContext(
   {
-    theme: THEMES.DARK,
+    theme: THEMES.LIGHT,
     setTheme: (theme) => {},
   }
 );
@@ -15,7 +15,7 @@ function ThemeProvider({ children }) {
   const initialState = () => {
     const storedTheme = localStorage.getItem("theme");
 
-    return storedTheme ? JSON.parse(storedTheme) : THEMES.DARK;
+    return storedTheme ? JSON.parse(storedTheme) : THEMES.LIGHT;
   };
 
   const [theme, changeTheme] = React.useState(initialState());

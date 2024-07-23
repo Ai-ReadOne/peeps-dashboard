@@ -1,14 +1,7 @@
-import { Card, CardHeader, List, ListItem, Typography } from "@mui/material";
+import { Card, CardContent, CardHeader, Typography } from "@mui/material";
 import { grey} from "@mui/material/colors";
 import 'chart.js/auto';
 import { Pie } from "react-chartjs-2";
-import styled from "styled-components";
-
-const FlexBox = styled.div`
-  display: flex;
-  align-items: center;
-  height: 100%;
-`;
 
 const PieChart = ({
   chartLabels, 
@@ -54,11 +47,9 @@ const PieChart = ({
   };
 
   return (
-    <Card sx={{ px: 8, py: 6, height: "350px" }} variant="outline">
-      <Typography variant="h5" component="div">
-              {chartTitle}
-      </Typography>
-      <Typography variant="body2" color="text.secondary" >
+    <Card variant="outline" style={{ boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.2)'}}>
+      <CardHeader title={chartTitle} />
+      <Typography variant="body2" color="text.secondary" ml={4} mt={-4} >
         {chartDescription}
       </Typography>
       <CardContent>

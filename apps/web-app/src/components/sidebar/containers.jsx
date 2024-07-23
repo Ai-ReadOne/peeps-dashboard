@@ -9,6 +9,7 @@ export const NavItemContainer = styled.div`
   align-items: left;
   margin: 1rem 10px 0 10px;
   padding: 0;
+  min-width:13%;
 
   a {
     display: flex;
@@ -41,6 +42,7 @@ export const NavItemContainer = styled.div`
   a.active {
     background: #96b4e3;
     color: var(--on-primary-accent, #fff);
+    border-radius: 5px;
 
     svg {
       fill: #464c5e;

@@ -1,12 +1,9 @@
-import { Card, CardContent, Typography } from '@mui/material';
 import 'chart.js/auto';
 import { Line } from 'react-chartjs-2';
 
 const LineChart = ({
   chartLabels, 
-  chartData, 
-  chartTitle="OKR Progress", 
-  chartDescription }) => {
+  chartData }) => {
   const data ={
     labels: chartLabels || ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
     datasets: [
@@ -35,17 +32,7 @@ const LineChart = ({
   
 
   return (
-    <Card>
-      <Typography variant="h5" component="div">
-              {chartTitle}
-      </Typography>
-      <Typography variant="body2" color="text.secondary" >
-          {chartDescription}
-        </Typography>
-      <CardContent>
-        <Line data={data} options={options} />
-      </CardContent>
-    </Card>
+    <Line data={data} options={options} />
   );
 };
 

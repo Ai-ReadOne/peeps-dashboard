@@ -7,8 +7,8 @@ function Home() {
       <MessageHeader>
         Welcome John!
       </MessageHeader>
-      <Card sx={{width: "600", height: "600" }} variant="outline" elevation={6}>
-        <CardHeader title="Coming Soon!" />
+      <Card sx={{width: "600", height: "600" }} variant="outline">
+        <CardHeader title="Page not found" />
       </Card>
 
 

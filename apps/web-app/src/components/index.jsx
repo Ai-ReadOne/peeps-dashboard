@@ -7,7 +7,7 @@ import { Badge, Grid, Typography } from "@mui/material";
 const NotificationLink = styled(NavLink)`
     position: fixed;
     top: 20px;
-    right: 19%;
+    right: 15%;
     align-items: center;
     text-decoration: none;
 

@@ -1,5 +1,4 @@
 import { lazy } from "react";
-import { Navigate } from "react-router-dom";
 
 const DashboardLayout = lazy(() => import("./layouts/dashboard"));
 const Home = lazy(() => import("./pages/home"));
@@ -8,15 +7,16 @@ const GoalTracker = lazy(() => import("./pages/goalTracker"));
 const Feedback = lazy(() =>import("./pages/feedback"));
 const Engagement = lazy(() =>import("./pages/engagement"));
 const Profile = lazy(() =>import("./pages/profile"));
+const NotFound = lazy(() =>import("./pages/notFound"));
 
 
 const routes = [
   {
     path: "/",
     element: (
-      <DashboardLayout>
-        <Home />
-      </DashboardLayout>
+        <DashboardLayout>
+          <Home />
+        </DashboardLayout>
     ),
   },
 
@@ -67,7 +67,11 @@ const routes = [
 
   {
     path: "*",
-    element: <Navigate to="/not-found" />,
+    element: (
+      <DashboardLayout>
+        <NotFound />
+      </DashboardLayout>
+    ),
   },
 ];
 

@@ -14,7 +14,8 @@ const Container = styled.section`
   bottom: 0;
   left: 0;
   height: 100%;
-  width: ;
+  min-width: 140px;
+  width: 12%;
   background: ${(props) => props.theme.sidebar.background};
   color: #000;
   transition: all 0.2s ease;

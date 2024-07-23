@@ -1,5 +1,5 @@
 import {FlagOutlined, TrendingDown, TrendingUp} from "@mui/icons-material/";
-import { Badge, Card, CardContent, CardHeader, Grid, LinearProgress, Typography } from "@mui/material";
+import { Card, CardContent, CardHeader, Grid, LinearProgress, Typography } from "@mui/material";
 import {styled} from "styled-components"
 import { CardHeaderWithValue, CardValueWithBadge } from "..";
 
@@ -16,7 +16,7 @@ const TrendDownIcon = styled(TrendingDown)`
   color: "red";
   background-color: "red";
 `
-const MetricContainer = styled.div`
+export const MetricContainer = styled.div`
   display: grid;
   direction: columns;
   gap: 8px;
@@ -43,7 +43,7 @@ export const SingleValueMetricCard = ({
   }
 
   return (
-    <Card sx={{ maxWidth: 345 }} variant="outlined">
+    <Card sx={{ maxWidth: 345 }} variant="outlined" style={{ boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.2)'}}>
       <Grid container  spacing={2}>
         <Grid item xs={10}>
           <CardHeader title={title} />
@@ -74,7 +74,7 @@ export const ProjectsMetricCard = ({
   blockerIndicator="High",
 }) => {
     return (
-    <Card sx={{ maxWidth: 345 }} variant="outlined">
+    <Card sx={{ maxWidth: 345 }} variant="outlined" style={{ boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.2)'}}>
       <MetricContainer>
         <CardHeader title="Projects Metric" />
         <Typography variant="body2" color="text.secondary" ml={4} mt={-4}>
@@ -106,7 +106,7 @@ export const TeamProductivityMetricCard = ({
   improvementIndicator="Low",
 }) => {
     return (
-    <Card sx={{ maxWidth: 345 }} variant="outlined">
+    <Card sx={{ maxWidth: 345 }} variant="outlined" style={{ boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.2)'}}>
       <CardHeader title="Team Productivity" />
       <CardContent>
         <MetricContainer>

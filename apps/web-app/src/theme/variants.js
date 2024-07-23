@@ -1,4 +1,4 @@
-import { grey} from "@mui/material/colors";
+import { grey, yellow} from "@mui/material/colors";
 import { THEMES } from "./constants";
 
 const defaultVariant = {
@@ -7,6 +7,7 @@ const defaultVariant = {
     mode: "light",
     primary: grey,
     secondary: grey,
+    warning: yellow,
     background: {
       default: grey[100],
       paper: grey[100],
@@ -31,6 +32,7 @@ const darkVariant = {
     mode: "dark",
     primary: grey,
     secondary: grey,
+    warning: yellow,
     background: {
       default: grey[900],
       paper: grey[900],

@@ -1,21 +1,19 @@
-import { Button, Typography } from "@mui/material";
+import { MessageHeader } from "../components";
+import {Card, CardHeader} from "@mui/material"
 
-function Engagement() {
+function Home() {
   return (
     <>
-      <Button
-        type="submit"
-        variant="contained"
-        color="primary"
-        fullWidth
-        sx={{ py: 2.5, borderRadius: "8px" }}
-      >
-        <Typography variant="body2" fontWeight={600} letterSpacing={1}>
-          Sign in
-        </Typography>
-      </Button>
+      <MessageHeader>
+        Welcome John!
+      </MessageHeader>
+      <Card sx={{width: "600", height: "600" }} variant="outline" elevation={6}>
+        <CardHeader title="Coming Soon!" />
+      </Card>
+
+
     </>
   );
 }
 
-export default Engagement;
+export default Home;
